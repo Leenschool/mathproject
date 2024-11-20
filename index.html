@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Triangle Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Triangle Math</h1>
+    </header>
+
+    <section id="intro">
+        <p>Learn about triangles, their types, angles, and properties.</p>
+    </section>
+
+    <section id="main-container">
+        <!-- Classify Triangle Form -->
+        <div>
+            <h2>Classify a Triangle</h2>
+            <form id="triangle-form">
+                <label for="side-a">Side A: </label>
+                <input type="number" id="side-a" placeholder="Enter side A" required>
+
+                <label for="side-b">Side B: </label>
+                <input type="number" id="side-b" placeholder="Enter side B" required>
+
+                <label for="side-c">Side C: </label>
+                <input type="number" id="side-c" placeholder="Enter side C" required>
+
+                <button type="submit">Classify Triangle</button>
+            </form>
+            <p id="triangle-type"></p>
+        </div>
+
+        <!-- Interactive Triangle Diagram -->
+        <div id="interactive-diagram">
+            <h2>Interactive Triangle Diagram</h2>
+            <svg id="triangle-svg" width="300" height="300" viewBox="0 0 300 300" style="background-color: #f9f9f9; border: 1px solid #ccc;">
+                <!-- Triangle will be drawn here -->
+            </svg>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Leen</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
